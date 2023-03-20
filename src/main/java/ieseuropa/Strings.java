@@ -18,12 +18,17 @@ public class Strings {
 	private static String todoMayus(String string) {
 		return string.toUpperCase();
 	}
+	private static String borrarPrimeroDeSegundo(String string, String string2) {
+		return string.replace(string2, "");
+	}
 	public static void main(String[] args) {
 		
 		String string = "La gran casa azul";
+		String string2 = "casa";
 		System.out.println(ocurrenciasLetra(string, 'a'));
 		System.out.println(todoMinus(string));
 		System.out.println(todoMayus(string));
+		System.out.println(borrarPrimeroDeSegundo(string, string2));
 	}
 
 }
