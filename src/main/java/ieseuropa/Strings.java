@@ -12,10 +12,18 @@ public class Strings {
 		
 		return contador;
 	}
+	private static String todoMinus(String string) {
+		return string.toLowerCase();
+	}
+	private static String todoMayus(String string) {
+		return string.toUpperCase();
+	}
 	public static void main(String[] args) {
 		
 		String string = "La gran casa azul";
 		System.out.println(ocurrenciasLetra(string, 'a'));
+		System.out.println(todoMinus(string));
+		System.out.println(todoMayus(string));
 	}
 
 }
