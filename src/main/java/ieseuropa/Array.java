@@ -21,6 +21,10 @@ public class Array {
 		System.out.println("Hola");
 		int [] array ={3,40,25,16};
 		System.out.println("La mediana es: "+mediana(array));
+		CalcularMaximo smax = new CalcularMaximo();
+		System.out.println(smax.calcularMax(array));
+		CalcularMinimo smin = new CalcularMinimo();
+		System.out.println(smin.calcularMin(array));
 	}
 
 }
