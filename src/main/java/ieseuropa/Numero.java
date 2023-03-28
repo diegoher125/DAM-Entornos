@@ -23,6 +23,15 @@ public class Numero {
 		return new int[] {1, 2, 5, 12, 29, 70, 169, 408, 985, 2378, 5741, 13860, 33461, 80782, 195025, 470832, 1136689,
 			2744210, 6625109, 15994428};
 	}
+	private static void pasarHMS(int segundos) {
+        int horas = segundos / 3600;
+        int minutos = (segundos % 3600) / 60;
+        segundos = (segundos % 3600) % 60;
+        System.out.println("Horas: "+horas);
+        System.out.println("Minutos: "+minutos);
+        System.out.println("Segundos: "+segundos);
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -37,6 +46,8 @@ public class Numero {
 		for (int num : pell) {
 			System.out.print(num+" ");
 		}
+		System.out.println("\n--------------------------------------- Segundos");
+		pasarHMS(23564);
 	}
 
 }
