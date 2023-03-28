@@ -12,7 +12,13 @@ public class Numero {
 		}
 		return primo;
 	}
-	
+	private static int calcularFactorial(int numero) {
+		int factorial = 1;
+		for (int i = numero; i > 1; i--) {
+			factorial *= i;
+		}
+		return factorial;
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -21,7 +27,9 @@ public class Numero {
 		System.out.println("--------------------------------------- Primo");
 		System.out.println(esPrimo(5));
 		System.out.println(esPrimo(4));
-		
+		System.out.println("--------------------------------------- Factorial");
+		System.out.println("Factorial de 9: "+ calcularFactorial(9));
+
 	}
 
 }
