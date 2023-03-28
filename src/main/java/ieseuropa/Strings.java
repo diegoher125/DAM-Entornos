@@ -21,6 +21,11 @@ public class Strings {
 	private static String borrarPrimeroDeSegundo(String string, String string2) {
 		return string.replace(string2, "");
 	}
+	
+	public static int longitudNombre(String nombre) {
+		return nombre.length();
+	}
+	
 	public static void main(String[] args) {
 		
 		String string = "La gran casa azul";
@@ -29,6 +34,10 @@ public class Strings {
 		System.out.println(todoMinus(string));
 		System.out.println(todoMayus(string));
 		System.out.println(borrarPrimeroDeSegundo(string, string2));
+		
+		System.out.println("---------------------------- Longitud de un nombre");
+		System.out.println(longitudNombre("Javier"));
+		System.out.println(longitudNombre("Santiago")); 
 	}
 
 }
