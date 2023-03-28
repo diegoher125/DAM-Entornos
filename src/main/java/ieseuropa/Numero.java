@@ -19,7 +19,10 @@ public class Numero {
 		}
 		return factorial;
 	}
-	
+	private static int[] seriePell_15(){
+		return new int[] {1, 2, 5, 12, 29, 70, 169, 408, 985, 2378, 5741, 13860, 33461, 80782, 195025, 470832, 1136689,
+			2744210, 6625109, 15994428};
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
@@ -29,7 +32,11 @@ public class Numero {
 		System.out.println(esPrimo(4));
 		System.out.println("--------------------------------------- Factorial");
 		System.out.println("Factorial de 9: "+ calcularFactorial(9));
-
+		System.out.println("--------------------------------------- Pell");
+		int[] pell = seriePell_15();
+		for (int num : pell) {
+			System.out.print(num+" ");
+		}
 	}
 
 }
