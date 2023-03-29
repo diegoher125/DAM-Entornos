@@ -30,7 +30,12 @@ public class Strings {
 		System.out.println();
 	}
 	
+
+	public static int longitudNombre(String nombre) {
+		return nombre.length();
+	}
 	
+
 	public static void main(String[] args) {
 		
 		String string = "La gran casa azul";
@@ -40,10 +45,16 @@ public class Strings {
 		System.out.println(todoMayus(string));
 		System.out.println(borrarPrimeroDeSegundo(string, string2));
 
+
 		System.out.println("---------------------------- Duplicar Letra");
 		repetirLetra("NBA");
 		repetirLetra("Madrid");
-	
+
+		
+		System.out.println("---------------------------- Longitud de un nombre");
+		System.out.println(longitudNombre("Javier"));
+		System.out.println(longitudNombre("Santiago")); 
+
 	}
 	
 	
