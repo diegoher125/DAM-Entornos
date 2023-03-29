@@ -2,6 +2,24 @@ package main.java.ieseuropa;
 
 public class Numero {
 
+
+	
+	public static boolean esNumeroArmstrong(int numero) {
+		int suma = 0;
+		int original = numero;
+		int longitud = String.valueOf(numero).length();
+
+		while (numero > 0) {
+			int digito = numero % 10;
+			suma += Math.pow(digito, longitud);
+			numero /= 10;
+		}
+		boolean respuesta = false;
+		if (suma == original) {
+			respuesta = true;
+		}
+		return respuesta;
+}
 	public static boolean esPrimo(int dato) {
 		int contador = 2;
 		boolean primo = true;
@@ -30,12 +48,17 @@ public class Numero {
         System.out.println("Horas: "+horas);
         System.out.println("Minutos: "+minutos);
         System.out.println("Segundos: "+segundos);
+
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		
+
+		System.out.println("--------------------------------------- Armstrong");
+		System.out.println(esNumeroArmstrong(153));
+		System.out.println(esNumeroArmstrong(125));
+
 		System.out.println("--------------------------------------- Primo");
 		System.out.println(esPrimo(5));
 		System.out.println(esPrimo(4));
@@ -48,6 +71,7 @@ public class Numero {
 		}
 		System.out.println("\n--------------------------------------- Segundos");
 		pasarHMS(23564);
+
 	}
 
 }
