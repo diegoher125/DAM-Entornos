@@ -24,6 +24,7 @@ public class Strings {
 		return string.replace(string2, "");
 	}
 	
+
 	public static void repetirStrings(String str1, String str2) {
 		Scanner teclado = new Scanner(System.in);
 		String resultado = "";
@@ -32,7 +33,22 @@ public class Strings {
 			System.out.println(str1 + " " + str2);
 		}
 	}
+
+	public static void repetirLetra(String palabra) {
+		for(int i = 0; i < palabra.length(); i++) {
+			System.out.print(palabra.charAt(i));
+			System.out.print(palabra.charAt(i));
+		}
+		System.out.println();
+	}
 	
+
+	public static int longitudNombre(String nombre) {
+		return nombre.length();
+	}
+	
+
+
 	public static void main(String[] args) {
 		
 		String string = "La gran casa azul";
@@ -41,11 +57,25 @@ public class Strings {
 		System.out.println(todoMinus(string));
 		System.out.println(todoMayus(string));
 		System.out.println(borrarPrimeroDeSegundo(string, string2));
+
 		
 		System.out.println("---------------------------- Repetir Strings");
 		repetirStrings("Joaquin", "Acosta");
 		
+
+		System.out.println("---------------------------- Duplicar Letra");
+		repetirLetra("NBA");
+		repetirLetra("Madrid");
+
 		
+		System.out.println("---------------------------- Longitud de un nombre");
+		System.out.println(longitudNombre("Javier"));
+		System.out.println(longitudNombre("Santiago")); 
+
+
 	}
+	
+	
+	
 
 }
